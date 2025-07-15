@@ -12,7 +12,11 @@
     <img src="roof.jpg" alt="Company logo">
     <h1>The Loyal Roofing Company</h1>
   </div>
-  <nav>
+
+  <!-- Botón hamburguesa -->
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+  <nav class="nav-menu">
     <ul>
       <li><a href="#">About Us</a></li>
       <li><a href="#">Gallery</a></li>
@@ -36,5 +40,13 @@ Based in Las Vegas, we stand firm on trust, professionalism, and pride in every 
   <footer>
     © 2025 The Loyal Roofing Company LLC
   </footer>
+  <script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
