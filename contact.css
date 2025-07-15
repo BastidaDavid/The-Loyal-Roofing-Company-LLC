@@ -1,0 +1,96 @@
+/* Estilo general del body para mantener la armonía */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Contenedor principal del formulario */
+.contact-container {
+  max-width: 500px;
+  background-color: #fff;
+  margin: 40px auto;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+}
+
+/* Título del formulario */
+.contact-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #004a99; /* Azul similar a la página */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Estilos de los labels */
+.contact-container label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #004a99;
+  font-size: 16px;
+}
+
+/* Inputs y textarea */
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 2px solid #004a99;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.contact-container input[type="text"]:focus,
+.contact-container input[type="email"]:focus,
+.contact-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #f0f8ff;
+}
+
+/* Botón enviar */
+.contact-container button {
+  background-color: #004a99;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 74, 153, 0.6);
+}
+
+.contact-container button:hover {
+  background-color: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.7);
+}
+
+/* Mensaje de éxito o error (si tienes) */
+.contact-container .message {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  color: green;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .contact-container {
+    margin: 20px;
+    padding: 20px 15px;
+  }
+}
