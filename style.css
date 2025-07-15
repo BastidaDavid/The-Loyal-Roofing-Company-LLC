@@ -1,3 +1,4 @@
+/* Estilo base */
 body {
   position: relative;
   z-index: 0;
@@ -27,23 +28,51 @@ body::before {
   pointer-events: none;
 }
 
+/* Header con logo y navegación horizontal */
 header {
   background-color: #1a1f2b;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
   color: white;
+  flex-wrap: wrap;
 }
 
-header img {
-  max-width: 120px;
-  margin-bottom: 10px;
+.branding {
+  display: flex;
+  align-items: center;
 }
 
-h1 {
+.branding img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+header h1 {
   margin: 0;
   font-size: 2em;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f3e9db;
+}
+
+/* Contenido principal */
 .container {
   padding: 40px 20px;
   text-align: center;
@@ -77,6 +106,7 @@ h1 {
   background-color: #7f1717;
 }
 
+/* Footer */
 footer {
   background-color: #1a1f2b;
   color: white;
