@@ -1,3 +1,10 @@
+/* Asegura que padding y border estén dentro del width/height */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Estilo general del body para mantener la armonía */
 body {
   font-family: 'Georgia', serif;
