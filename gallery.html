@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - The Loyal Roofing Company LLC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="roof.jpg" alt="Company logo">
+      <h1>The Loyal Roofing Company LLC.</h1>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="employment.html">Employment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="gallery-container">
+    <h2>Our Work</h2>
+    <p>Here are some of the roofing projects we've completed with pride and professionalism.</p>
+
+    <div class="gallery-grid">
+      <img src="gallery1.jpg" alt="Roofing project 1">
+      <img src="gallery2.jpg" alt="Roofing project 2">
+      <img src="gallery3.jpg" alt="Roofing project 3">
+      <img src="gallery4.jpg" alt="Roofing project 4">
+      <!-- Puedes agregar más imágenes aquí -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <!-- Facebook & Instagram SVGs igual que antes -->
+    </div>
+    © 2025 The Loyal Roofing Company LLC
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
