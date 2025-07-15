@@ -36,9 +36,10 @@ body {
   font-size: 16px;
 }
 
-/* Inputs y textarea */
+/* Inputs y textarea (ahora incluye input[type="tel"]) */
 .contact-container input[type="text"],
 .contact-container input[type="email"],
+.contact-container input[type="tel"],
 .contact-container textarea {
   width: 100%;
   padding: 12px 14px;
@@ -51,8 +52,10 @@ body {
   resize: vertical;
 }
 
+/* Efecto focus */
 .contact-container input[type="text"]:focus,
 .contact-container input[type="email"]:focus,
+.contact-container input[type="tel"]:focus,
 .contact-container textarea:focus {
   border-color: #007bff;
   outline: none;
