@@ -1,32 +1,34 @@
 body {
   position: relative;
-  z-index: 0; /* para que el contenido esté arriba */
+  z-index: 0;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Georgia', serif;
+  background-color: #f3e9db;
+  color: #1e2a38;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
 body::before {
   content: "";
-  position: fixed; /* o absolute si prefieres */
+  position: fixed;
   top: 50%;
   left: 50%;
-  width: 80vw;      /* ancho grande */
-  height: 80vh;     /* alto grande */
-  background-image: url('ruta-del-logo.png'); /* pon la ruta correcta */
+  width: 90vw;
+  height: 90vh;
+  background-image: url('roof.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain; /* para que mantenga proporción */
-  opacity: 0.1; /* opacidad baja para que sea sutil */
+  background-position: center;
+  background-size: contain;
+  opacity: 0.06;
   transform: translate(-50%, -50%);
-  z-index: -1; /* detrás del contenido */
-  pointer-events: none; /* para que no interfiera */
+  z-index: -1;
+  pointer-events: none;
 }
 
 header {
-  background-color: #1a1f2b; /* azul marino oscuro */
+  background-color: #1a1f2b;
   padding: 20px;
   text-align: center;
   color: white;
@@ -48,9 +50,15 @@ h1 {
 }
 
 .container h2 {
-  color: #991b1b; /* rojo oscuro del logo */
+  color: #991b1b;
   font-size: 1.8em;
   margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: auto;
 }
 
 .btn {
