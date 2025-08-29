@@ -1,17 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - The Loyal Roofing Company LLC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="about.css" />
+</head>
 <body>
+  <!-- Header dinámico -->
   <div id="header-container"></div>
 
   <section class="about-section">
-    ...
+    <h2>About Us</h2>
+    <div class="about-content">
+      <img src="roof.jpg" alt="Our Team Working">
+      <div class="text">
+        <p>
+          The Loyal wasn’t born as just another company. It was born from experience, frustration, and a deep desire to do things differently.
+        </p>
+        <p>
+          For years, we worked in an industry that often felt unfair. We saw big companies treat clients like numbers, make promises they never kept, and worst of all, we saw how workers were exploited — underpaid, ignored, or replaced without a second thought. Disloyalty was everywhere — from the top down and even among crews.
+        </p>
+        <p>
+          We had enough of that.
+        </p>
+        <p>
+          That’s why we decided to start something of our own. A company where respect, honesty, and loyalty would be at the heart of everything. Loyalty to our clients, who trust us to protect their homes. Loyalty to our team, who show up every day and deserve to be treated with dignity. And loyalty to our values — which are not negotiable.
+        </p>
+        <p>
+          One of our most important values is safety. Roofing isn’t just a job — it’s high-risk work. And we take that seriously. Every project we take on is done following strict safety protocols, because no one should ever risk their life due to negligence. And no homeowner should have to worry about whether their roof was installed the right way. Your peace of mind is our responsibility.
+        </p>
+        <p>
+          The Loyal Roofing Company LLC is more than just roofing. It’s a response to a broken system. It’s a family built by people who have lived through injustice and decided to break the cycle. We believe business can be done with integrity, that growth doesn’t require stepping on others, and that quality starts with treating people right.
+        </p>
+        <p>
+          Because when there’s loyalty — and safety — everything changes.
+        </p>
+        <p>
+          And that’s who we are.<br>
+          That’s The Loyal.
+        </p>
+      </div>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 The Loyal Roofing Company LLC. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts -->
+  <!-- Script para cargar header dinámicamente -->
   <script>
-    // Cargar header.html
     fetch('header.html')
       .then(response => response.text())
       .then(data => {
@@ -26,3 +65,4 @@
       });
   </script>
 </body>
+</html>
