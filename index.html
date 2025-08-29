@@ -20,17 +20,17 @@
       justify-content: center;
       align-items: center;
       z-index: 9999;
+      transition: opacity 0.5s ease;
     }
 
     /* Spinner */
     .spinner {
       border: 6px solid #f3f3f3;
-      border-top: 6px solid #0074D9; /* azul bandera */
+      border-top: 6px solid #0074D9; /* color azul */
       border-radius: 50%;
       width: 60px;
       height: 60px;
       animation: spin 1s linear infinite;
-      margin-top: 20px;
     }
 
     @keyframes spin {
@@ -38,26 +38,21 @@
       100% { transform: rotate(360deg); }
     }
 
-    /* Bandera animada */
-    .flag {
-      width: 120px;
-      height: 80px;
-      background: url('usa-flag.png') no-repeat center center;
-      background-size: cover;
-      animation: wave 1s infinite alternate;
+    /* Slider de imágenes */
+    .gallery-slider img {
+      display: none; /* ocultar todas por defecto */
+      width: 100%;
+      height: auto;
     }
 
-    @keyframes wave {
-      0% { transform: rotate(0deg); }
-      50% { transform: rotate(5deg); }
-      100% { transform: rotate(-5deg); }
+    .gallery-slider img.active {
+      display: block; /* mostrar solo la activa */
     }
   </style>
 </head>
 <body>
   <!-- Loader -->
   <div id="loader">
-    <div class="flag"></div>
     <div class="spinner"></div>
   </div>
 
@@ -115,12 +110,13 @@
       .then(data => {
         document.getElementById('header-container').innerHTML = data;
 
-        // Toggle del menú
         const toggleBtn = document.querySelector('.menu-toggle');
         const navMenu = document.querySelector('.nav-menu');
-        toggleBtn.addEventListener('click', () => {
-          navMenu.classList.toggle('active');
-        });
+        if(toggleBtn) {
+          toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+          });
+        }
       });
 
     // Slider de imágenes
@@ -131,8 +127,10 @@
       current = (current + 1) % images.length;
       images[current].classList.add('active');
     }
-    images[0].classList.add('active');
-    setInterval(showNextImage, 3000);
+    if(images.length > 0) {
+      images[0].classList.add('active');
+      setInterval(showNextImage, 3000);
+    }
   </script>
 </body>
 </html>
