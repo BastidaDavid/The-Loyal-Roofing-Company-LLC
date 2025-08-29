@@ -6,8 +6,62 @@
   <title>The Loyal Roofing Company LLC.</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="header.css" />
+  <style>
+    /* Loader */
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    /* Spinner */
+    .spinner {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #0074D9; /* azul bandera */
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin-top: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Bandera animada */
+    .flag {
+      width: 120px;
+      height: 80px;
+      background: url('usa-flag.png') no-repeat center center;
+      background-size: cover;
+      animation: wave 1s infinite alternate;
+    }
+
+    @keyframes wave {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(5deg); }
+      100% { transform: rotate(-5deg); }
+    }
+  </style>
 </head>
 <body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="flag"></div>
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Contenido -->
   <div id="header-container"></div>
 
   <div class="container two-columns">
@@ -48,6 +102,13 @@
 
   <!-- Scripts -->
   <script>
+    // Ocultar loader cuando la página cargue
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      loader.style.opacity = 0;
+      setTimeout(() => loader.style.display = 'none', 500);
+    });
+
     // Cargar header.html
     fetch('header.html')
       .then(response => response.text())
