@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Loyal Roofing Company LLC — Roofing &amp; Siding in Las Vegas. Free estimates, licensed &amp; insured. Quality installations and repairs for residential and commercial.">
+  <meta name="keywords" content="roofing, roofing Las Vegas, roof repair, siding, shingles, flat roof, commercial roofing, residential roofing, free estimate">
+  <meta name="theme-color" content="#b22222">
+  <meta property="og:title" content="The Loyal Roofing Company LLC — Roofing &amp; Siding in Las Vegas">
+  <meta property="og:description" content="Fast, reliable, and affordable roofing &amp; siding services. Get a free quote today.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.theloyalroofingcompanyllc.com/">
+  <meta property="og:image" content="Roof1.JPG">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
   <title>The Loyal Roofing Company LLC.</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="header.css" />
@@ -11,40 +21,195 @@
   
   <div id="header-container"></div>
 
-  <div class="container two-columns">
-    <div class="text-content">
-      <h2>Loyalty Above All</h2>
-      <p>
-        At The Loyal Roofing Company, loyalty is more than just a name—it's our promise.<br>
-        Loyalty to our clients, loyalty to our workers, and loyalty to the quality of our craft.<br>
-        Based in Las Vegas, we stand firm on trust, professionalism, and pride in every roof we build.
+  <section class="hero reveal" aria-label="Roofing hero banner" style="position:relative;min-height:88vh;color:#fff;overflow:hidden;">
+    <!-- Video de fondo -->
+    <video autoplay muted loop playsinline preload="metadata" poster="roof.jpg"
+           style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.8);">
+      <source src="roof.mp4" type="video/mp4">
+      <!-- Fallback si no se puede reproducir el video -->
+      Your browser does not support the video tag.
+    </video>
+    <!-- Overlay degradado para contraste -->
+    <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,.55) 60%, rgba(0,0,0,.65) 100%);"></div>
+    <!-- Contenido del hero -->
+    <div class="container" style="position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:56px 24px;display:flex;flex-direction:column;gap:14px;justify-content:center;min-height:88vh;">
+      <h1 style="font-size:clamp(30px,4.6vw,56px);line-height:1.08;margin:0;font-weight:800;letter-spacing:.2px;">Roofing &amp; Siding in Las Vegas</h1>
+      <p style="font-size:clamp(16px,2.2vw,20px);max-width:820px;margin:0;">
+        Fast, reliable, and affordable roofing solutions for residential and commercial properties.
+        Licensed &amp; insured • Free estimates • Emergency service.
       </p>
-      <a href="contact.html" class="btn">Contact Us</a>
+      <div class="hero-ctas" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:6px;">
+        <a href="contact.html" class="btn" style="background:#b22222;color:#fff;padding:12px 18px;border-radius:6px;text-decoration:none;font-weight:700;display:inline-block;box-shadow:0 10px 24px rgba(178,34,34,.35);">Get a Free Quote</a>
+        <a href="tel:+17025550123" class="btn" style="background:#ffffff;color:#111;padding:12px 18px;border-radius:6px;text-decoration:none;font-weight:700;display:inline-block;">Call (702) 555‑0123</a>
+      </div>
+      <ul aria-label="Trust badges" style="display:flex;flex-wrap:wrap;gap:16px;margin:16px 0 0;padding:0;list-style:none;">
+        <li style="background:rgba(0,0,0,.35);padding:8px 12px;border-radius:999px;">✅ Licensed &amp; Insured</li>
+        <li style="background:rgba(0,0,0,.35);padding:8px 12px;border-radius:999px;">🛠️ Quality Materials</li>
+        <li style="background:rgba(0,0,0,.35);padding:8px 12px;border-radius:999px;">⏱️ Fast Turnaround</li>
+        <li style="background:rgba(0,0,0,.35);padding:8px 12px;border-radius:999px;">💬 Free Estimates</li>
+      </ul>
     </div>
+    <!-- Accesibilidad: skip-link -->
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+  </section>
 
-    <div class="gallery-slider-container">
-      <div class="gallery-slider">
-        <img src="Roof1.JPG" alt="Roof 1">
-        <img src="Roof2.JPG" alt="Roof 2">
-        <img src="Roof3.JPG" alt="Roof 3">
-        <img src="Roof4.JPG" alt="Roof 4">
-        <img src="Roof5.PNG" alt="Roof 5">
+  <!-- ABOUT / WHY CHOOSE US -->
+  <section class="about reveal" style="background:#f8f8f8;padding:56px 24px;">
+    <div class="container" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;align-items:center;">
+      <div style="text-align:left;">
+        <h2 style="margin:0 0 12px;font-weight:800;text-align:left;">Why Choose The Loyal Roofing?</h2>
+        <p style="margin:0 0 12px;">We combine skilled craftsmanship with durable, energy‑efficient materials to deliver projects that protect your property and elevate curb appeal.</p>
+        <ul style="margin:0;padding-left:22px;line-height:1.8;list-style:disc;text-align:left;">
+          <li>Licensed, insured, and safety‑first crews</li>
+          <li>Transparent quotes and timelines</li>
+          <li>Warranty‑backed materials</li>
+          <li>Residential &amp; commercial expertise</li>
+        </ul>
       </div>
-      <div class="service-description">
-        <h3>Roofing & Siding Experts</h3>
-        <p>
-          We specialize in high-quality roofing and siding solutions for residential and commercial properties.
-          Our team is committed to durable, energy-efficient, and visually appealing results that protect your investment and enhance curb appeal.
-        </p>
+      <div>
+        <img src="img/diego.jpg" alt="Diego — Project Manager at The Loyal Roofing Company" style="width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.12);" loading="lazy" onerror="this.onerror=null;this.src='Roof3.JPG';this.alt='Roofing team in Las Vegas';">
       </div>
     </div>
-  </div>
+  </section>
+
+  <main id="main-content">
+    <section class="container two-columns" style="gap:32px;align-items:start;padding:40px 24px;">
+      <div class="text-content">
+        <h2 style="margin-top:0;">Loyalty Above All</h2>
+        <p>
+          At <strong>The Loyal Roofing Company</strong>, loyalty is more than just a name—it's our promise.<br>
+          Loyalty to our clients, loyalty to our workers, and loyalty to the quality of our craft.<br>
+          Based in Las Vegas, we stand firm on trust, professionalism, and pride in every roof we build.
+        </p>
+        <ul style="margin:12px 0 24px; padding-left:18px;">
+          <li>Residential &amp; commercial roofing</li>
+          <li>Shingle, tile, flat roof &amp; repairs</li>
+          <li>Energy-efficient &amp; weather-resistant solutions</li>
+        </ul>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn">Request Estimate</a>
+          <a href="gallery.html" class="btn" style="background:#222;color:#fff;">View Projects</a>
+        </div>
+      </div>
+
+      <div class="gallery-slider-container">
+        <div class="gallery-slider">
+          <img src="Roof1.JPG" alt="New shingle roof installation in Las Vegas" loading="lazy">
+          <img src="Roof2.JPG" alt="Tile roof maintenance" loading="lazy">
+          <img src="Roof3.JPG" alt="Commercial flat roof project" loading="lazy">
+          <img src="Roof4.JPG" alt="Residential roof replacement" loading="lazy">
+          <img src="Roof5.PNG" alt="Siding and roofing upgrade" loading="lazy">
+        </div>
+        <div class="service-description">
+          <h3>Roofing &amp; Siding Experts</h3>
+          <p>
+            We specialize in high-quality roofing and siding solutions for residential and commercial properties.
+            Our team is committed to durable, energy-efficient, and visually appealing results that protect your investment and enhance curb appeal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Services Overview -->
+    <section class="container" style="padding:0 24px 56px;">
+      <h3 style="margin:0 0 12px;">Our Core Services</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+        <article class="card reveal" style="border:1px solid #eee;border-radius:12px;padding:18px;background:#fff;">
+          <h4 style="margin:0 0 8px;">Roof Installation</h4>
+          <p style="margin:0;">Shingle, tile &amp; flat roofs installed to last—with manufacturer-backed warranties.</p>
+        </article>
+        <article class="card reveal" style="border:1px solid #eee;border-radius:12px;padding:18px;background:#fff;">
+          <h4 style="margin:0 0 8px;">Roof Repair</h4>
+          <p style="margin:0;">Leaks, storm damage, flashing &amp; ventilation fixes done right the first time.</p>
+        </article>
+        <article class="card reveal" style="border:1px solid #eee;border-radius:12px;padding:18px;background:#fff;">
+          <h4 style="margin:0 0 8px;">Siding</h4>
+          <p style="margin:0;">Durable, energy‑efficient siding to protect your home and elevate curb appeal.</p>
+        </article>
+        <article class="card reveal" style="border:1px solid #eee;border-radius:12px;padding:18px;background:#fff;">
+          <h4 style="margin:0 0 8px;">Gutters</h4>
+          <p style="margin:0;">Custom gutter installation and maintenance to prevent water damage.</p>
+        </article>
+        <article class="card reveal" style="border:1px solid #eee;border-radius:12px;padding:18px;background:#fff;">
+          <h4 style="margin:0 0 8px;">Inspections</h4>
+          <p style="margin:0;">Detailed roof inspections and reports for insurance or real‑estate needs.</p>
+        </article>
+        <article class="card reveal" style="border:1px solid #eee;border-radius:12px;padding:18px;background:#fff;">
+          <h4 style="margin:0 0 8px;">Maintenance</h4>
+          <p style="margin:0;">Preventive maintenance plans to extend your roof’s lifespan.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS GALLERY WITH LIGHTBOX -->
+    <section class="container gallery-pro reveal" style="padding:0 24px 56px;">
+      <h3 style="margin:0 0 12px;">Recent Projects</h3>
+      <div class="grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
+        <a href="Roof1.JPG" class="lightbox-trigger"><img src="Roof1.JPG" alt="Shingle installation" style="width:100%;border-radius:10px;" loading="lazy"></a>
+        <a href="Roof2.JPG" class="lightbox-trigger"><img src="Roof2.JPG" alt="Tile roof maintenance" style="width:100%;border-radius:10px;" loading="lazy"></a>
+        <a href="Roof3.JPG" class="lightbox-trigger"><img src="Roof3.JPG" alt="Commercial flat roof" style="width:100%;border-radius:10px;" loading="lazy"></a>
+        <a href="Roof4.JPG" class="lightbox-trigger"><img src="Roof4.JPG" alt="Residential replacement" style="width:100%;border-radius:10px;" loading="lazy"></a>
+        <a href="Roof5.PNG" class="lightbox-trigger"><img src="Roof5.PNG" alt="Siding upgrade" style="width:100%;border-radius:10px;" loading="lazy"></a>
+        <a href="roof.jpg" class="lightbox-trigger"><img src="roof.jpg" alt="Team on site" style="width:100%;border-radius:10px;" loading="lazy"></a>
+      </div>
+      <!-- Lightbox modal -->
+      <div id="lightbox" aria-hidden="true" style="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;padding:16px;z-index:9999;">
+        <button id="lightbox-close" aria-label="Close" style="position:absolute;top:16px;right:16px;background:#fff;border:none;border-radius:6px;padding:8px 10px;font-weight:700;cursor:pointer;">Close ✕</button>
+        <img id="lightbox-img" alt="" style="max-width:92vw;max-height:86vh;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.35);" />
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials reveal" style="background:#fff;padding:40px 24px;">
+      <div class="container" style="max-width:1100px;margin:0 auto;">
+        <h3 style="margin:0 0 12px;">What Our Clients Say</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
+          <blockquote style="margin:0;border:1px solid #eee;border-radius:12px;padding:16px;background:#fafafa;">“Fast and professional. They replaced our roof in two days and left everything spotless.”<br><strong>— Maria G.</strong></blockquote>
+          <blockquote style="margin:0;border:1px solid #eee;border-radius:12px;padding:16px;background:#fafafa;">“Great pricing and honest communication. Highly recommend for any repairs.”<br><strong>— Daniel R.</strong></blockquote>
+          <blockquote style="margin:0;border:1px solid #eee;border-radius:12px;padding:16px;background:#fafafa;">“Quality work and friendly crew. Our new siding looks amazing.”<br><strong>— Ashley P.</strong></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CALL TO ACTION -->
+    <section class="cta reveal" style="background:#b22222;color:#fff;padding:40px 24px;">
+      <div class="container" style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;">
+        <h3 style="margin:0;line-height:1.2;">Need roofing help now? Get your free estimate today.</h3>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="btn" href="contact.html" style="background:#fff;color:#111;padding:12px 18px;border-radius:6px;text-decoration:none;font-weight:700;">Request Quote</a>
+          <a class="btn" href="tel:+17025550123" style="background:transparent;border:2px solid #fff;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:700;">Call (702) 555‑0123</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <div class="social-icons">
-      <!-- íconos de redes sociales aquí -->
+  <div class="social-icons"></div>
+  <div class="container" style="padding:24px;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;align-items:start;">
+      <div>
+        <strong>The Loyal Roofing Company LLC</strong><br>
+        Las Vegas, NV<br>
+        <a href="tel:+17025550123" style="color:inherit;text-decoration:none;">(702) 555‑0123</a><br>
+        <a href="mailto:info@theloyalroofingcompanyllc.com" style="color:inherit;text-decoration:none;">info@theloyalroofingcompanyllc.com</a>
+      </div>
+      <div>
+        <strong>Quick Links</strong><br>
+        <a href="about.html" style="color:inherit;">About</a> ·
+        <a href="gallery.html" style="color:inherit;">Gallery</a> ·
+        <a href="team.html" style="color:inherit;">Team</a> ·
+        <a href="contact.html" style="color:inherit;">Contact</a>
+      </div>
+      <div>
+        <strong>Hours</strong><br>
+        Mon–Sat: 8:00–18:00<br>
+        Sun: Closed
+      </div>
     </div>
-    © 2025 The Loyal Roofing Company LLC
+    <div style="border-top:1px solid #eee;margin:16px 0 0;padding-top:12px;">
+      © 2025 The Loyal Roofing Company LLC
+    </div>
+  </div>
   </footer>
 
   <!-- Scripts -->
@@ -58,22 +223,102 @@
         // Toggle del menú
         const toggleBtn = document.querySelector('.menu-toggle');
         const navMenu = document.querySelector('.nav-menu');
-        toggleBtn.addEventListener('click', () => {
-          navMenu.classList.toggle('active');
-        });
+        if (toggleBtn && navMenu) {
+          toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+          });
+        }
       });
 
-    // Slider de imágenes
+    // Slider de imágenes (defensivo y accesible)
     const images = document.querySelectorAll('.gallery-slider img');
     let current = 0;
-    function showNextImage() {
-      images[current].classList.remove('active');
-      current = (current + 1) % images.length;
-      images[current].classList.add('active');
+
+    function updateAria() {
+      images.forEach((img, idx) => {
+        const isActive = idx === current;
+        img.classList.toggle('active', isActive);
+        img.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+      });
     }
-    images[0].classList.add('active');
-    setInterval(showNextImage, 3000);
+
+    function showNextImage() {
+      if (!images.length) return;
+      current = (current + 1) % images.length;
+      updateAria();
+    }
+
+    if (images.length) {
+      images[0].classList.add('active');
+      images[0].setAttribute('aria-hidden', 'false');
+      for (let i = 1; i < images.length; i++) {
+        images[i].setAttribute('aria-hidden', 'true');
+      }
+      setInterval(showNextImage, 3000);
+    }
+
+    // Skip-link smooth scroll
+    document.querySelectorAll('a.skip-link').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Reveal on scroll
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.style.transition = 'opacity .6s ease, transform .6s ease';
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'none';
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      revealEls.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(18px)';
+        io.observe(el);
+      });
+    }
+    // Simple Lightbox
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightbox-img');
+    const lbClose = document.getElementById('lightbox-close');
+    document.querySelectorAll('a.lightbox-trigger').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = a.getAttribute('href');
+        lbImg.src = href;
+        lb.style.display = 'flex';
+        lb.setAttribute('aria-hidden', 'false');
+      });
+    });
+    function closeLb() {
+      lb.style.display = 'none';
+      lb.setAttribute('aria-hidden', 'true');
+      lbImg.src = '';
+    }
+    if (lbClose) lbClose.addEventListener('click', closeLb);
+    if (lb) lb.addEventListener('click', (e) => {
+      if (e.target === lb) closeLb();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lb && lb.style.display === 'flex') closeLb();
+    });
   </script>
+
+  <!-- Floating actions -->
+  <div class="floating-cta" style="position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:9999;">
+    <a href="tel:+17025550123" aria-label="Call The Loyal Roofing Company" style="background:#25d366;color:#fff;padding:12px 14px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 8px 22px rgba(0,0,0,.25);">Call</a>
+    <a href="contact.html" aria-label="Get a Free Quote" style="background:#b22222;color:#fff;padding:12px 14px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 8px 22px rgba(0,0,0,.25);">Quote</a>
+  </div>
 </body>
 
 </html>
